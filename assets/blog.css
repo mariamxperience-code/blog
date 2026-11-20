@@ -1,0 +1,42 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--teal:#0097B2;--aqua:#30D5C8;--black:#000;--near-black:#080c0e;--dark:#0d1518;--mid:#162025;--line:rgba(255,255,255,.07);--text-dim:#a3b8c5;--text:#d6e6ef;--white:#fff}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--near-black);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+nav{position:sticky;top:0;z-index:100;height:64px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;background:rgba(8,12,14,.96);border-bottom:1px solid rgba(0,151,178,.15)}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--white);text-decoration:none}
+.nav-logo span{color:var(--aqua)}
+.nav-links{display:flex;gap:1.6rem;align-items:center}
+.nav-links a{color:var(--text-dim);text-decoration:none;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.nav-links a:hover{color:var(--white)}
+.nav-links a.nav-cta{background:var(--aqua);color:var(--black);padding:.55rem 1.2rem;border-radius:999px;font-weight:800}
+@media(max-width:640px){.nav-links a:not(.nav-cta){display:none}}
+.btn{display:inline-flex;align-items:center;gap:.6rem;background:var(--aqua);color:var(--black);font-weight:800;font-size:.95rem;padding:1rem 2.2rem;border-radius:999px;text-decoration:none;box-shadow:0 8px 30px rgba(48,213,200,.22);transition:transform .2s,background .2s}
+.btn:hover{background:#5fe6db;transform:translateY(-2px)}
+.btn svg{width:18px;height:18px}
+.hero{padding:5rem 5vw 3rem;text-align:center;border-bottom:1px solid var(--line)}
+.kicker{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--aqua)}
+.h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,6vw,4.6rem);line-height:1;letter-spacing:1px;color:var(--white);margin:.8rem auto 0;max-width:900px}
+.h1 em{font-style:normal;color:var(--aqua)}
+.lead{max-width:640px;margin:1.2rem auto 0;color:var(--text-dim);font-size:1.05rem}
+.grid{max-width:1100px;margin:0 auto;padding:3.5rem 5vw 5rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.6rem}
+.card{display:flex;flex-direction:column;background:var(--dark);border:1px solid var(--line);border-radius:16px;padding:1.8rem;text-decoration:none;transition:border-color .2s,transform .2s}
+.card:hover{border-color:rgba(48,213,200,.5);transform:translateY(-3px)}
+.card .date{font-size:.75rem;color:var(--text-dim);letter-spacing:.06em;text-transform:uppercase}
+.card h2{font-family:'Playfair Display',serif;font-size:1.45rem;line-height:1.25;color:var(--white);margin:.6rem 0 .8rem}
+.card p{color:var(--text-dim);font-size:.95rem;flex:1}
+.card .more{margin-top:1.2rem;color:var(--aqua);font-weight:700;font-size:.9rem}
+article{max-width:720px;margin:0 auto;padding:3.5rem 5vw 2rem}
+article .meta{font-size:.8rem;color:var(--text-dim);letter-spacing:.06em;text-transform:uppercase;margin-bottom:2rem;text-align:center}
+article p{font-size:1.08rem;margin-bottom:1.3rem}
+article h2{font-family:'Playfair Display',serif;font-size:1.7rem;line-height:1.25;color:var(--white);margin:2.6rem 0 1rem}
+article strong{color:var(--white)}
+article ul,article ol{margin:0 0 1.4rem 1.3rem}
+article li{font-size:1.05rem;margin-bottom:.6rem}
+article blockquote{border-left:3px solid var(--aqua);padding:.4rem 0 .4rem 1.3rem;margin:2rem 0;font-family:'Playfair Display',serif;font-style:italic;font-size:1.35rem;color:var(--white);line-height:1.4}
+.cta{max-width:720px;margin:1rem auto 4rem;padding:2.4rem 2rem;text-align:center;background:linear-gradient(135deg,var(--mid),var(--dark));border:1px solid rgba(48,213,200,.3);border-radius:18px}
+.cta h3{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;letter-spacing:1px;color:var(--white);line-height:1.05}
+.cta p{color:var(--text-dim);margin:.8rem auto 1.6rem;max-width:520px}
+.back{display:block;text-align:center;margin:-2rem 0 4rem;color:var(--text-dim);font-size:.9rem}
+footer{border-top:1px solid var(--line);padding:2rem 5vw;text-align:center;font-size:.82rem;color:var(--text-dim)}
+footer a{color:var(--aqua);text-decoration:none}
